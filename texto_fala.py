@@ -12,5 +12,7 @@ tts.save("audio.mp3")
 
 
 #rodando o áudio de forma automática
-os.system('ffplay audio.mp3')
+os.system('ffplay -autoexit -nodisp audio.mp3')
+# -autoexit: para encerrar após o fim da mensagem
+# -nodisp: para nao abrir o display
 
